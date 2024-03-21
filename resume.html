@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="icon" href="/Assets/fvicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/Assets/fvicon.svg" type="image/x-icon">
+
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@1&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
 
@@ -24,7 +27,9 @@
       .carousel-item {
         min-width: 100%;
       }
+
     </style>
+    
     <script>
         tailwind.config = {
           theme: {
@@ -32,15 +37,17 @@
       xs: '360px',
       sm: '480px',
       md: '800px',
-      lg: '976px',
-      xl: '1440px',
+      lg: '1440px',
+      mxl: '1368px',
+      xl: '1740px',
+      xxl: '1920px',
     },
 
     colors: {
       'darkblue': '#0F1B34',
       'tblue': '#0B1118',
       'darkerblue': '#0D1017',
-      'liteblue': '#185ADB',
+      'liteblue': '#0078FF',
       'gray': '#5D6471',
       'bgcolor': '#0C0C0C',
     },
@@ -72,24 +79,24 @@
 <body class="bg-bgcolor">
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center m-20 gap-40">
+    <nav class="flex justify-between items-center m-16 gap-40 ">
       <a href="./index.html">
         <img src="/Assets/logo.svg" alt="Logo" class="">
       </a>
 
-      <ul class="text-white flex items-center justify-center space-x-4 font-FontB font-medium text-xl p-3 items-center justify-center border-[#09203B] bg-tblue border-4 rounded-full">
+        <ul class="text-white flex items-center justify-center space-x-4 font-FontB font-medium text-xl p-3 border-[#09203B] bg-tblue border-4 rounded-full lg:hidden xl:flex xs:hidden">
 
-            <div class="cursor-pointer w-40 h-14 items-center justify-center flex rounded-full"><a href="./index.html">About</a></div>
-            <div class="cursor-pointer w-40 h-14 items-center justify-center flex bg-darkblue rounded-full"><a href="#">Resume</a></div>
-            <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full"><a href="#">Portfolio</a></div>
-            <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full"><a href="#">Blogs</a></div>
-            <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full"><a href="#">Contact</a></div>
+            <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full hover:border-darkblue hover:border-4"><a href="/index.html">About</a></div>
+            <div class="cursor-pointer w-40 h-14 items-center justify-center flex bg-darkblue rounded-full hover:border-darkblue hover:border-4"><a href="./resume.html">Resume</a></div>
+            <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full hover:border-darkblue hover:border-4"><a href="#">Portfolio</a></div>
+            <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full hover:border-darkblue hover:border-4"><a href="#">Blogs</a></div>
+            <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full hover:border-darkblue hover:border-4"><a href="#">Contact</a></div>
 
         </ul>
     </nav>
 
-
-    
+    <!-- Body Section -->
+   
 
 </body>
 </html>

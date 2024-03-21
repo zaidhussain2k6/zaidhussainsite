@@ -37,8 +37,8 @@
       xs: '360px',
       sm: '480px',
       md: '800px',
-      lg: '976px',
-      xl: '1440px',
+      lg: '1440px',
+      xl: '1740px',
       xxl: '1920px',
     },
 
@@ -78,12 +78,12 @@
 <body class="bg-bgcolor">
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center m-20 gap-40">
+    <nav class="flex justify-between items-center m-20 gap-40 ">
       <a href="./index.html">
         <img src="/Assets/logo.svg" alt="Logo" class="">
       </a>
 
-        <ul class="text-white flex items-center justify-center space-x-4 font-FontB font-medium text-xl p-3 border-[#09203B] bg-tblue border-4 rounded-full">
+        <ul class="text-white flex items-center justify-center space-x-4 font-FontB font-medium text-xl p-3 border-[#09203B] bg-tblue border-4 rounded-full lg:hidden xl:flex xs:hidden">
 
             <div class="cursor-pointer w-40 h-14 items-center justify-center flex bg-darkblue rounded-full"><a href="#">About</a></div>
             <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full"><a href="./resume.html">Resume</a></div>
@@ -99,35 +99,25 @@
 
       <div class="left items-center justify-center inline-grid gap-20">
         <img src="../Images/my-pfp.png" alt="" class="max-w-md hover:scale-75 transition duration-1000 ease-in-out rounded-full inset-0 border-[6px] border-white">
-        <div class="social-links flex gap-10 items-center justify-center">
-          <img src="../Assets/behance.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
-          <img src="../Assets/linkedin.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
-          <img src="../Assets/facebook.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
-          <img src="../Assets/github.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
-        </div>
+        
       </div>
 
       <div class="right text-white space-y-10">
-        <h1 class="font-FontA xxl:text-6xl font-semibold lg:text-5xl">Myself <span class="text-liteblue underline">Zaid</span> Hussain</h1>
-        <p class="max-w-full xl:w-[1000px] xxl:w-[1200px] font-FontB lg:text-2xl xxl:text-2xl opacity-60">As a UI/UX Designer and Frontend Developer, I'm dedicated to crafting visually stunning and user-centric digital experiences. My journey in web development has been exciting, driving me to continually learn and expand my skills.
-          <br>
-          <br>
-          Currently, I'm deepening my expertise in JavaScript, React.js, and Next.js, aiming to become a versatile MERN Stack Full Developer capable of creating end-to-end solutions.
-          <br>
-          <br>
-          - UI/UX Design: I excel in creating aesthetically pleasing and user-friendly interfaces.
-          <br>
-          - Frontend Development: Proficient in HTML, CSS, and Tailwind, always exploring new techniques for responsive and interactive applications.
-          <br>
-          <br>
+        <h1 id="text" class="font-FontA font-semibold lg:text-5xl">Myself <span class="text-liteblue underline">Zaid</span> Hussain</h1>
+        <p class="max-w-full text-2xl font-FontB opacity-60 xs:text-center ">As a UI/UX Designer and Frontend Developer, I'm dedicated to crafting visually stunning and user-centric digital experiences. My journey in web development has been exciting, driving me to continually learn and expand my skills.
+
+          <div class="social-links flex gap-10 items-left justify-left">
+            <img src="../Assets/behance.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
+            <img src="../Assets/linkedin.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
+            <img src="../Assets/facebook.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
+            <img src="../Assets/github.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out">
+          </div>
           
-          Excited to connect with professionals, mentors, and like-minded individuals for collaboration, knowledge-sharing, or discussions on industry trends. Let's connect and grow together!</p>
       </div>
 
     </div>
 
 
-    
 
 </body>
 </html>

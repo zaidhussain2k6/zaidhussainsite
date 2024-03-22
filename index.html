@@ -50,6 +50,8 @@
       'liteblue': '#0078FF',
       'gray': '#5D6471',
       'bgcolor': '#0C0C0C',
+      'bgg': '#0D1017',
+      'bgd': '#0F1B34',
     },
     
     fontFamily: {
@@ -79,12 +81,12 @@
 <body class="bg-bgcolor">
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center m-16 gap-40 ">
+    <nav class="flex justify-between items-center m-20 gap-40 ">
       <a href="./index.html">
         <img src="/Assets/logo.svg" alt="Logo" class="">
       </a>
 
-        <ul class="text-white flex items-center justify-center space-x-4 font-FontB font-medium text-xl p-3 border-[#09203B] bg-tblue border-4 rounded-full lg:hidden xl:flex xs:hidden">
+        <ul class="text-white flex items-center justify-center space-x-4 font-FontB font-medium text-xl p-3 border-[#09203B] bg-tblue border-4 rounded-full md:hidden xs:hidden lg:flex">
 
             <div class="cursor-pointer w-40 h-14 items-center justify-center flex bg-darkblue rounded-full"><a href="#">About</a></div>
             <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full hover:border-darkblue hover:border-4"><a href="./resume.html">Resume</a></div>
@@ -93,19 +95,22 @@
             <div class="cursor-pointer w-40 h-14 items-center justify-center flex active:bg-darkblue rounded-full hover:border-darkblue hover:border-4"><a href="#">Contact</a></div>
 
         </ul>
+
+        <div class="xs:flex lg:hidden"><img src="/Assets/ham.svg" alt=""></div>
+
     </nav>
 
     <!-- Body Section -->
-    <div class="main xs:py-10 md:my-40 xs:mx-10 md:mx-20 flex flex-wrap items-center justify-center xs:gap-10 xl:gap-40 xs:space-y-10 lg:space-y-20 items-center ">
+    <div class="px-14 border-4 border-solid border-bgd rounded-2xl bg-bgg main xs:py-10 md:my-40 xs:mx-10 md:mx-20 flex flex-wrap items-center justify-center xs:gap-10 xl:gap-40 xs:space-y-10 lg:space-y-20 items-center ">
 
       <div class="left items-center justify-center inline-grid gap-20">
         <img src="../Images/my-pfp.png" alt="" class="xs:w-72 md:w-96 hover:scale-75 transition duration-1000 ease-in-out rounded-full inset-0 border-[6px] border-white">
         
       </div>
 
-        <div class="text-white space-y-10 content-center" >
+        <div class="text-white space-y-10 content-center pb-20" >
         <h1 id="text" class="font-FontA font-semibold text-5xl xs:text-center mxl:text-left xs:text-3xl md:text-5xl">Myself <span class="text-liteblue underline">Zaid</span> Hussain</h1>
-        <p class="max-w-[890px] font-FontB opacity-60 xs:text-center xs:width-[300px] md:width-[100px] mxl:text-left xs:text-lg md:text-2xl xl:text-3xl">As a UI/UX Designer and Frontend Developer, I'm dedicated to crafting visually stunning and user-centric digital experiences. My journey in web development has been exciting, driving me to continually learn and expand my skills.
+        <p class="max-w-[890px] font-FontB opacity-50 xs:text-center xs:width-[300px] md:width-[100px] mxl:text-left xs:text-lg md:text-2xl xl:text-3xl">As a UI/UX Designer and Frontend Developer, I'm dedicated to crafting visually stunning and user-centric digital experiences. My journey in web development has been exciting, driving me to continually learn and expand my skills.
 
           <div class="social-links flex xs:items-center xs:justify-center mxl:justify-start mxl:items-start gap-8 items-left justify-left">
             <a target="_blank" href="https://www.behance.net/uxuizaidhussain"><img src="../Assets/behance.svg" alt="" class="cursor-pointer hover:scale-125 transition duration-300 ease-in-out"></a>

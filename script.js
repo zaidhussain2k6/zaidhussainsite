@@ -11,7 +11,7 @@ tailwind.config = {
 xs: '360px',
 sm: '480px',
 md: '800px',
-lg: '1280px',
+lg: '1313px',
 mxl: '1548px',
 xl: '1740px',
 xxl: '1920px',

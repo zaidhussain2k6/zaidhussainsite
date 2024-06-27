@@ -1,0 +1,17 @@
+ /* Customize the carousel styles as needed */
+ .carousel {
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+  }
+ 
+  html {
+  scroll-behavior: smooth;
+}

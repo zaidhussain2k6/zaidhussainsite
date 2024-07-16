@@ -55,8 +55,18 @@ fontSize: {
   '10xl': '8rem',       // 128px
 },
 
+backdropBlur: {
+  'xs': '2px',
+  'sm': '4px',
+  'md': '8px',
+  'lg': '16px',
+  'xl': '24px',
+  '2xl': '40px',
+},
+
 rotate: {
 '90': '-90deg',
 }
+
   }
 }
